@@ -16,9 +16,11 @@ minify:
     disableXML: true
     # minifyOutput: true
 
+defaultContentLanguage: sk
+
 languages:
-    en:
-        languageName: "English"
+    sk:
+        languageName: "Slovenčina"
         weight: 1
         taxonomies:
           category: categories
@@ -26,77 +28,17 @@ languages:
           series: series
         menu:
             main:
-                - name: Archive
-                  url: archives
+                - name: Archív
+                  url: archiv
                   weight: 5
-                - name: Search
+                - name: Vyhľadávanie
                   url: search/
                   weight: 10
-                - name: Tags
+                - name: Tagy
                   url: tags/
                   weight: 10
-                - name: Categories
+                - name: Kategórie
                   url: categories/
-                  weight: 10
-
-    fr:
-        languageName: ":fr:"
-        languageAltTitle: French
-        weight: 2
-        title: PaperModL2
-        taxonomies:
-          category: FRcategories
-          tag: FRtags
-          series: FRseries
-        profileMode:
-            enabled: true
-            title: PaperMod
-            # imageUrl: "#"
-            # imageTitle: my image
-            # imageWidth: 120
-            # imageHeight: 120
-            subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
-            buttons:
-                - name: Blog
-                  url: posts
-                - name: Tags
-                  url: tags
-        menu:
-            main:
-                - name: Archive
-                  url: archives/
-                  weight: 5
-                - name: FRTags
-                  url: frtags
-                  weight: 10
-                - name: FRCategories
-                  url: frcategories
-                  weight: 10
-                - name: FRSeries
-                  url: frseries
-                  weight: 10
-                - name: NullLink
-                  url: "#"
-                - name: NullLink2
-                  url: "#"
-                - name: NullLink3
-                  url: "#"
-
-    fa:
-        languagedirection: rtl
-        weight: 3
-        title: PaperMod RTL
-        homeInfoParams:
-            Title: "Hi there \U0001F44B"
-            Content: Welcome to RTL layout
-        taxonomies:
-          category: FAcategories
-          tag: FAtags
-          series: FAseries
-        menu:
-            main:
-                - name: FATags
-                  url: fatags
                   weight: 10
 
 outputs:
@@ -134,35 +76,35 @@ params:
         # imageHeight: 120
         buttons:
             - name: Archives
-              url: archives
+              url: archiv
             - name: Tags
               url: tags
 
     homeInfoParams:
-        Title: "PaperMod"
+        Title: "btcpay.sk"
         Content: >
-            Welcome to demo of hugo's theme PaperMod.
+            Vitajte na stránkach komunitného BtcPayServer-a.
 
-            - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
+            - <b>Pozor! Stránky a brána momentálne fungujú v testovacej prevádzke.</b> Verejné registrácie nie sú povolené a obsah webu nie je skompletizovaný. V prípade že sa chcete do testu zapojiť, kontaktujte nás emailom.
 
-            - Do give a 🌟 on Github !
+            - Misia **btcpay.sk** je rozšíriť adopciu platieb kryptomenami. Prevádzkujeme verejný BtcPayServer, ktorý môžu obchodníci (alebo ktokoľvek iný) integrovať na svoj webshop bez technických znalostí.
 
-            - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
+            - V prípade záujmu si môžete prečítať <a href='navod'><b>návod ako na to</b></a>, čo to o <a href='bezpecnost'><b>bezpečnosti riešenia</b></a> ako aj informácie o zákonoch a <a href='legal'><b>právnej stránke</b></a> riešenia platieb cez BtcPayServer.
 
     socialIcons:
-        - name: github
-          url: "https://github.com/btcpaysk"
         - name: twitter
           url: "https://twitter.com/btcpay_sk"
         - name: facebook
-          url: "https://fb"
+          url: "https://fb.me/btcpay.sk"
         - name: email
           url: "mailto:ahoj@btcpay.sk"
+        - name: github
+          url: "https://github.com/btcpaysk"
         - name: RsS
           url: "index.xml"
 
     editPost:
-        URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+        URL: "https://github.com/btcpaysk/btcpay.sk/content"
         Text: "Navrhni zmeny" # edit text
         appendFilePath: true # to append file path to Edit link
 
